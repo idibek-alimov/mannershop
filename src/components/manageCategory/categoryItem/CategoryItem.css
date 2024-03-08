@@ -1,0 +1,18 @@
+.category-box {
+  width: 90%;
+  height: 30px;
+  text-align: left;
+  padding: 7px 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.category-box .category-text {
+  font-size: 16px;
+}
+.category-box .category-icon {
+  width: 15px;
+  height: 15px;
+  color: black;
+}

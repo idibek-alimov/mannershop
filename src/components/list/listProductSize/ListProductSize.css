@@ -1,0 +1,21 @@
+.list-box {
+  /* display: flex;
+    flex-wrap: wrap;
+    width: 100%; */
+  /* display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, max-content));
+  grid-gap: 16px;
+  justify-content: center;
+  padding: initial; */
+  /* display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between !important; */
+  /* justify-content: space-between; */
+}
+@media only screen and (max-width: 600px) {
+  .list-box {
+    justify-content: space-around !important;
+  }
+}

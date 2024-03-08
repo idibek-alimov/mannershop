@@ -1,0 +1,28 @@
+.nav-box {
+  width: 100%;
+  display: grid;
+  place-items: center;
+  margin-top: 20px;
+  min-height: 80vh;
+  z-index: 20;
+  margin-top: -20px;
+  border-radius: 0px;
+  background-color: rgb(250, 247, 247);
+  position: relative;
+}
+.nav-box .nav-wrapper {
+  width: 100%;
+  max-width: var(--max-width);
+  min-height: 100%;
+  margin-top: 50px;
+}
+@media only screen and (max-width: 600px) {
+  .nav-box {
+    background-color: white;
+    margin-top: 0px;
+    width: 100vw !important;
+  }
+  .nav-box .nav-wrapper {
+    margin-top: 0px;
+  }
+}

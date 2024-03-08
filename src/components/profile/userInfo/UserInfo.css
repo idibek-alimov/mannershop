@@ -1,0 +1,165 @@
+.user-info-page-box {
+  width: 100%;
+  position: relative;
+}
+.user-info-page-box .wrapper-box {
+  position: relative;
+}
+.user-info-page-box .wrapper-box .background-box {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  opacity: 0.2;
+  background-color: lightgray;
+}
+.user-info-page-box .wrapper-box .popup {
+  z-index: 20;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  min-width: 300px;
+  min-height: 150px;
+  padding: 30px;
+  border-radius: 20px;
+  flex-direction: column;
+  text-align: left;
+  justify-content: space-between;
+}
+.user-info-page-box .wrapper-box .popup .change-name-bold {
+  font-size: 24px;
+  font-weight: 800;
+}
+.user-info-page-box .wrapper-box .popup .name-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 10px;
+}
+.user-info-page-box .wrapper-box .popup .name-text {
+  font-size: 16px;
+  color: gray;
+}
+.user-info-page-box .wrapper-box .popup .name-wrapper .input-box {
+  width: 100%;
+  background-color: lightgray;
+  border-radius: 5px;
+  padding: 7px 0px;
+  display: grid;
+  place-items: center;
+}
+.user-info-page-box .wrapper-box .popup .name-wrapper .input-box input {
+  width: 95%;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  background-color: inherit;
+  cursor: pointer;
+}
+.user-info-page-box .wrapper-box .popup .submit-button {
+  width: 100%;
+  background-color: blueviolet;
+  text-align: center;
+  padding: 7px 0px;
+  border-radius: 5px;
+  margin-top: 20px;
+  color: white;
+  font-size: 20px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.user-info-page-box .user-info-page-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+}
+.user-info-page-box .user-info-page-wrapper .box {
+  width: 95%;
+  min-height: 160px;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 3px 3px lightgray;
+}
+.user-info-page-box .user-info-page-wrapper .first {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+.user-info-page-box .user-info-page-wrapper .first .user-name-box {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+.user-info-page-box
+  .user-info-page-wrapper
+  .first
+  .user-name-box
+  .user-name-text {
+  font-size: 20px;
+  font-weight: 800;
+}
+.user-info-page-box .user-info-page-wrapper .first .icon {
+  width: 20px;
+  height: 20px;
+  color: gray;
+  cursor: pointer;
+}
+.user-info-page-box .user-info-page-wrapper .first .user-number-box {
+  color: gray;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.user-info-page-box
+  .user-info-page-wrapper
+  .first
+  .user-number-box
+  .phone-number-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.user-info-page-box
+  .user-info-page-wrapper
+  .first
+  .user-number-box
+  .user-number-text {
+  color: black;
+}
+.user-info-page-box .second {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+.user-info-page-box .second .logout-text-bold {
+  font-size: 24px;
+  font-weight: 800;
+  color: black;
+}
+.user-info-page-box .second .log-out {
+  font-size: 16px;
+  font-weight: 600;
+  color: gray;
+  cursor: pointer;
+}
+@media only screen and (max-width: 600px) {
+  .user-info-page-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .user-info-page-box .user-info-page-wrapper {
+    margin-top: 20px;
+    width: 100%;
+  }
+}

@@ -1,0 +1,104 @@
+.authenticate-box {
+  width: 100%;
+  height: 100%;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.authenticate-box .authenticate-wrapper {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+  width: 300px;
+  border-radius: 5px;
+  box-shadow: 0 0 3px 3px lightgray;
+}
+.authenticate-box .authenticate-wrapper .login-text {
+  font-size: 30px;
+  font-weight: 800;
+  width: 100%;
+  text-align: center;
+}
+.authenticate-box .authenticate-wrapper .input-items-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+}
+.authenticate-box .authenticate-wrapper .input-items-wrapper .input-item-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+}
+.authenticate-box
+  .authenticate-wrapper
+  .input-items-wrapper
+  .input-item-box
+  .input-item-label {
+  font-size: 14px;
+  font-weight: 500;
+}
+.authenticate-box
+  .authenticate-wrapper
+  .input-items-wrapper
+  .input-item-box
+  .input-item-input {
+  padding: 8px;
+  font-size: 16px;
+  border: none;
+  border-radius: 3px;
+  background-color: lightgray;
+  outline: none;
+  width: 93%;
+}
+.authenticate-box
+  .authenticate-wrapper
+  .input-items-wrapper
+  .input-item-box
+  .error-massage {
+  font-size: 12px;
+  color: red;
+  display: none;
+}
+.authenticate-box
+  .authenticate-wrapper
+  .input-items-wrapper
+  .input-item-box
+  .error-massage1 {
+  font-size: 12px;
+  color: red;
+  text-align: left;
+  width: 100%;
+  line-height: 130%;
+}
+.authenticate-box
+  .authenticate-wrapper
+  .input-items-wrapper
+  .input-item-box
+  .input-item-input:invalid[data-focused="true"]
+  ~ .error-massage {
+  display: flex;
+}
+.authenticate-box
+  .authenticate-wrapper
+  .input-items-wrapper
+  .input-item-box
+  .input-item-input:invalid[data-focused="true"] {
+  outline: 1px solid red;
+}
+.authenticate-box .authenticate-wrapper .submit-button {
+  width: 99%;
+  outline: none;
+  border: none;
+  background-color: blueviolet;
+  font-size: 16px;
+  font-weight: 800;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}

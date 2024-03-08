@@ -1,0 +1,130 @@
+.show-map-box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  z-index: 20;
+  display: flex;
+  flex-direction: row;
+}
+.show-map-box .left {
+  width: 25%;
+  height: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+  gap: 10px;
+  position: absolute;
+  left: 0;
+  z-index: 51;
+}
+.show-map-box .left .left-main-text {
+  font-size: 16px;
+  font-weight: 700;
+  color: black;
+  margin-bottom: 20px;
+}
+.show-map-box .left .left-secondary-text {
+  font-size: 14px;
+  font-weight: 600;
+}
+.show-map-box .left .left-detail-text {
+  font-size: 12px;
+  font-weight: 500;
+  color: gray;
+  width: 100%;
+  text-align: left;
+}
+.show-map-box .left .coordinate-item {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: flex-start;
+  margin-top: 10px;
+  font-size: 14px;
+  gap: 5px;
+}
+.show-map-box .left .coordinate-text {
+  color: gray;
+}
+.show-map-box .left .coordinate-number {
+  color: black;
+}
+.show-map-box .left .delivery-detail-text {
+  border: 1px solid lightgray;
+  outline: none;
+  border-radius: 5px;
+  font-size: 12px;
+  padding: 10px;
+  width: 80%;
+  min-height: 100px;
+}
+.show-map-box .left .address-button {
+  border: none;
+  outline: none;
+  width: 100px;
+  font-size: 12px;
+  border-radius: 5px;
+  padding: 10px 10px;
+  color: white;
+  font-weight: 800;
+  background-color: blueviolet;
+  cursor: pointer;
+}
+.show-map-box .right {
+  position: absolute;
+  width: 100vw !important;
+  height: 100%;
+  z-index: 50;
+}
+/* .show-map-box .right .close-box {
+  position: absolute;
+  top: 10px;
+  right: 50px;
+  background-color: white;
+  width: 90px;
+  height: 30px;
+  border-radius: 10px;
+  color: black;
+  font-size: 14px;
+  font-weight: 500;
+  z-index: 50;
+  text-align: center;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+} */
+@media only screen and (max-width: 600px) {
+  .show-map-box {
+  }
+  .show-map-box .left {
+    height: 180px;
+    bottom: 0;
+    padding-top: 3px;
+    width: 100%;
+    transition: all 0.5s ease-in;
+    overflow: scroll;
+  }
+  .show-map-box .left-big {
+    height: 400px;
+  }
+  .show-map-box .left .folder-box {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .show-map-box .left .folder-box .folder-box-icon {
+    width: 30px;
+    height: 30px;
+  }
+  .show-map-box .right {
+    height: 100vh !important;
+    top: 0;
+  }
+}

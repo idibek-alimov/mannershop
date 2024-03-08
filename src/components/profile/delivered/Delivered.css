@@ -1,0 +1,33 @@
+.liked-box {
+  width: 100%;
+  text-align: left;
+}
+.liked-box .liked-wrapper {
+  width: 100%;
+}
+.liked-box .liked-text {
+  font-size: 20px;
+  font-weight: 800;
+}
+.liked-box .liked-wrapper .no-content-text {
+  margin-top: 100px;
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 140%;
+}
+@media only screen and (max-width: 600px) {
+  .liked-box {
+    display: grid;
+    place-items: center;
+    margin-top: 20px;
+  }
+  .liked-box .liked-text {
+    font-size: 25px !important;
+    font-weight: 800;
+    width: 90%;
+  }
+  .liked-box .liked-wrapper {
+  }
+}

@@ -1,0 +1,79 @@
+@media only screen and (max-width: 600px) {
+  .picture-detail-show-box {
+    position: fixed !important;
+    width: 100vw !important;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    z-index: 1001 !important;
+    background-color: white;
+  }
+  .picture-detail-show-box .top {
+    height: 10%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .picture-detail-show-box .top .close-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+
+  .picture-detail-show-box .middle {
+    overflow-x: auto;
+    overflow-y: hidden;
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    scroll-snap-type: x mandatory !important;
+    scroll-behavior: smooth !important;
+    scroll-margin-inline-start: 0;
+    -webkit-overflow-scrolling: touch !important;
+  }
+  .picture-detail-show-box .middle .large-picture-box {
+    width: 100%;
+    height: 100%;
+    scroll-snap-align: start;
+  }
+  .picture-detail-show-box .middle .large-picture {
+    min-width: 100%;
+    width: 100% !important;
+    object-fit: cover !important;
+  }
+  .picture-detail-show-box .bottom {
+    height: 20%;
+    width: 100%;
+    min-width: 100%;
+    overflow-x: scroll !important;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    padding: 0 10px 50px 10px;
+  }
+  .picture-detail-show-box .bottom .small-picture-box {
+    height: 80%;
+    min-width: 20%;
+    border-radius: 10px;
+    /* overflow: hidden; */
+    padding: 1%;
+    background-color: white;
+  }
+  .picture-detail-show-box .bottom .chosen-img {
+    border: 2px solid blueviolet;
+  }
+  .picture-detail-show-box .bottom .small-picture {
+    height: 99%;
+    width: 99%;
+    object-fit: cover;
+    margin: 1px;
+    border-radius: 10px;
+  }
+}

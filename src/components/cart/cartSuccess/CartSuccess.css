@@ -1,0 +1,28 @@
+.cart-success-box {
+  height: 400px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.cart-success-box .cart-success-wrapper {
+}
+.cart-success-box .cart-success-wrapper .cart-success-text {
+  font-size: 20px;
+  font-weight: 800;
+  color: black;
+}
+.cart-success-box .cart-success-wrapper .cart-success-button {
+  font-size: 18px;
+  font-weight: 800;
+  background-color: blueviolet;
+  color: white;
+  padding: 20px;
+  width: 300px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin-top: 30px;
+}

@@ -1,0 +1,24 @@
+.manage-category-box {
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.manage-category-box .parent-box {
+  width: 90%;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 5px;
+}
+.manage-category-box .parent-box .parent-icon {
+  width: 15px;
+  height: 15px;
+  font-weight: 700;
+}

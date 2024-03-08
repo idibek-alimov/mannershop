@@ -1,0 +1,11 @@
+.liked-box {
+  width: 100%;
+  text-align: left;
+}
+.liked-box .liked-wrapper {
+  width: 100%;
+}
+.liked-box .liked-text {
+  font-size: 20px;
+  font-weight: 800;
+}

@@ -1,0 +1,165 @@
+.profile-box {
+  width: 100%;
+}
+.profile-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.profile-nav .profile-nav-item-box {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  cursor: pointer;
+}
+.profile-nav .profile-nav-item-box:hover {
+  color: blueviolet;
+}
+.profile-nav .profile-nav-item-box .profile-nav-icon {
+  height: 25px;
+  width: 25px;
+}
+.profile-box .profile-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  width: 100%;
+}
+.profile-box .profile-wrapper .user-info-box {
+  justify-content: space-evenly;
+}
+.profile-box .profile-wrapper .user-info-box .user-name-box {
+  font-size: 20px;
+  font-weight: 800;
+}
+.profile-box .profile-wrapper .user-info-box:hover .user-name-box {
+  color: blueviolet;
+}
+.profile-box .profile-wrapper .user-info-box .user-number-box {
+  display: flex;
+  flex-direction: row;
+  color: gray;
+  gap: 10px;
+}
+.profile-box .profile-wrapper .user-info-box .user-number-box .user-number {
+  color: black;
+}
+.profile-box .profile-wrapper .user-info-box .log-out-box {
+  width: 100%;
+  text-align: right;
+  color: black;
+}
+.profile-box .profile-wrapper .user-info-box .log-out-box:hover {
+  color: gray;
+}
+.profile-box .profile-wrapper .liked-products-box {
+  width: 45%;
+  max-width: 50%;
+  height: 30%;
+  min-height: 120px;
+  border-radius: 10px;
+  box-shadow: 0 0 2px 2px lightgray;
+  background-color: white;
+  padding: 20px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  cursor: pointer;
+  overflow: hidden;
+}
+.profile-box .profile-wrapper .liked-products-box:hover {
+  box-shadow: 0 0 7px 7px rgb(214, 212, 212);
+  transition: all 0.3s ease-in;
+}
+.profile-box .profile-wrapper .liked-products-box .liked-products-text {
+  font-size: 20px;
+  font-weight: 800;
+  color: black;
+}
+.profile-box .profile-wrapper .liked-products-box:hover .liked-products-text {
+  color: blueviolet;
+}
+.profile-box .profile-wrapper .liked-products-box .liked-products-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-start;
+  background-color: white;
+  padding-left: 20px;
+  min-height: 60px;
+  color: gray;
+  text-align: left;
+}
+.profile-box .profile-wrapper .liked-products-box .liked-products-wrapper {
+}
+.profile-box
+  .profile-wrapper
+  .liked-products-box
+  .liked-products-wrapper
+  .liked-products-picture {
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  border: 2px solid white;
+  margin-left: -25px;
+}
+.profile-box
+  .profile-wrapper
+  .liked-products-box
+  .liked-products-wrapper
+  .absent-text {
+  margin-left: -20px;
+}
+@media only screen and (max-width: 600px) {
+  .profile-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .profile-box .profile-wrapper {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    align-items: center;
+  }
+  .profile-box .profile-wrapper .user-info-box {
+    gap: 80px;
+    display: flex;
+    flex-direction: column;
+  }
+  .profile-box .profile-wrapper .user-name-box {
+    font-size: 16px !important;
+  }
+  .profile-box .profile-wrapper .user-number-box {
+    font-size: 14px !;
+    margin-top: 15px;
+  }
+  .profile-box .profile-wrapper .liked-products-box {
+    width: 95%;
+    max-width: 90%;
+    max-height: 70px !important;
+    min-height: 30px;
+    gap: 0px;
+    padding: 10px;
+  }
+  .profile-box .profile-wrapper .liked-products-wrapper {
+    gap: 0 !important;
+  }
+  .profile-box .profile-wrapper .liked-products-wrapper .absent-text {
+    margin-top: -80px;
+  }
+  .profile-box .profile-wrapper .liked-products-box .liked-products-text {
+    font-size: 14px;
+  }
+  .profile-box .profile-wrapper .liked-products-box .liked-products-picture {
+    width: 40px !important;
+    height: 40px !important;
+  }
+}

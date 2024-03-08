@@ -1,0 +1,67 @@
+.choose-color-box {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.choose-color-box .icon {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.choose-color-box .rotate {
+  transform: rotate(180deg);
+}
+.choose-color-box .choose-color-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  overflow: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none;
+  transition: all 0.5 ease;
+  scroll-behavior: smooth;
+}
+.choose-color-box .choose-color-wrapper::-webkit-scrollbar {
+  display: none;
+}
+.choose-color-box .choose-color-wrapper .pic-box {
+  width: 50px;
+  border-radius: 3px;
+  padding: 2px;
+  cursor: pointer;
+}
+.choose-color-box .choose-color-wrapper .chosen-color {
+  border: 1px solid blueviolet;
+}
+.choose-color-box .choose-color-wrapper .pic-box .color-pic {
+  height: 60px;
+  width: 100%;
+  aspect-ratio: 3/4;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+  .choose-color-box {
+    height: 100px;
+  }
+  .choose-color-box .left-right {
+    display: none !important;
+  }
+  .choose-color-box .choose-color-wrapper {
+    height: 100%;
+    align-items: center;
+    gap: 5px;
+  }
+  .choose-color-box .choose-color-wrapper .pic-box {
+    height: 90%;
+    width: 100px;
+    padding: 2px !important;
+  }
+  .choose-color-box .choose-color-wrapper .pic-box .color-pic {
+    height: 98%;
+    aspect-ratio: 4/5;
+    transform-origin: center;
+  }
+}

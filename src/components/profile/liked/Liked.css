@@ -1,0 +1,21 @@
+.liked-box {
+  width: 100%;
+  text-align: left;
+}
+.liked-box .liked-wrapper {
+  width: 100%;
+}
+.liked-box .liked-text {
+  font-size: 20px;
+  font-weight: 800;
+}
+@media only screen and (max-width: 600px) {
+  .liked-box .no-content-text {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px !important;
+  }
+}

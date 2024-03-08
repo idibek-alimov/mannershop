@@ -1,0 +1,40 @@
+.inventories-box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+.inventories-box .inventory-text {
+  text-align: left;
+  font-size: 14px;
+  color: gray;
+}
+.inventories-box .inventories-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 3px;
+}
+.inventories-box .inventories-wrapper .inventory-item {
+  min-width: fit-content !important;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgb(52, 51, 51);
+  width: 50px;
+  height: 30px;
+  padding: 0 3px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+.inventories-box .inventories-wrapper .chosen-inventory {
+  border: 2px solid blueviolet;
+}
+@media only screen and (max-width: 600px) {
+  .inventories-box {
+  }
+  .inventories-box .inventory-text {
+    font-size: 16px;
+  }
+}

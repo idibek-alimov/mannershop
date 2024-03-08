@@ -1,13 +1,37 @@
+html {
+  scroll-behavior: smooth;
+}
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  scroll-behavior: smooth;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none;
 }
-
+:root {
+  --bg: #242526;
+  --bg-accent: #484a4d;
+  --text-color: #dadce1;
+  --nav-size: 60px;
+  --border: 1px solid #474a4d;
+  --border-radius: 8px;
+  --speed: 500ms;
+  -webkit-tap-highlight-color: transparent;
+  --max-width: 1200px;
+  --color: blueviolet;
+  --brand-color: white;
+  /* --brand-color: linear-gradient(to right, #cb11ab 0, #481173 100%) no-repeat; */
+  --text-font-1: system, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Segoe WP", Roboto, Ubuntu, Oxygen, Cantarell, "Fira Sans", "Helvetica Neue",
+    Helvetica, "Lucida Grande", "Droid Sans", Tahoma, "Microsoft Sans Serif",
+    sans-serif;
+}
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }

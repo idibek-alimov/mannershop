@@ -1,0 +1,93 @@
+.product-up-box {
+  /* height: 250px;
+  aspect-ratio: 3/5;
+  cursor: pointer;
+  padding: 10px;
+  background-color: yellow; */
+  /* flex: 0 0 25%; */
+  /* padding: 10px; */
+  padding: 0 !important;
+  width: 19%;
+  aspect-ratio: 2/3;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+.product-up-box .product-up-img-box {
+  position: relative;
+  height: 80%;
+  width: 100%;
+}
+.product-up-box .product-up-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.product-up-box .product-up-discount-box {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  background-color: tomato;
+  font-size: 14px;
+  padding: 2px 3px;
+  border-radius: 3px;
+  color: white;
+  font-weight: 700;
+}
+.product-up-box .product-up-bottom {
+  margin: 10px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 5px;
+  width: 100%;
+}
+.product-up-box .product-up-bottom .price-box {
+  width: 100%;
+  font-size: 16px;
+  font-weight: 700;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  gap: 20px;
+}
+.product-up-box .product-up-bottom .price-box .prev-price {
+  color: gray;
+  font-size: 14px;
+}
+.product-up-box .product-up-bottom .name-box {
+  font-size: 16px;
+  font-weight: 500;
+  color: rgb(107, 105, 105);
+}
+.product-up-box:hover .name-box {
+  color: rgb(57, 54, 54);
+}
+@media only screen and (max-width: 600px) {
+  .product-up-box {
+    all: unset;
+    /* max-width: 40% !important; */
+    margin-top: 10px;
+    min-width: 49%;
+    aspect-ratio: 2/3;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: inline-block !important;
+  }
+  .product-up-box .product-up-discount-box {
+    bottom: 5px;
+    left: 5px;
+    font-size: 10px;
+    padding: 2px 3px;
+    border-radius: 5px;
+  }
+  .product-up-box .product-up-bottom .name-ellipsis {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 14px !important;
+  }
+}
