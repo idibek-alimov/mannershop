@@ -1,46 +1,42 @@
-# Getting Started with Create React App
+# Проект "Manner Shop"
+Проект "Manner Shop" - это интернет-магазин, разработанный на React с использованием TypeScript. Пользователи могут зарегистрироваться, просматривать товары, добавлять их в корзину и оформлять заказы по адресу. Веб-сайт также предоставляет функции поиска и фильтрации по категориям.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Функциональности
+1. Регистрация пользователей.
+2. Просмотр каталога товаров.
+3. Добавление товаров в корзину.
+4. Оформление заказов с указанием адреса доставки.
+5. Поиск товаров.
+6. Фильтрация товаров по категориям.
 
-## Available Scripts
+## Технологии
+1. React: JavaScript-библиотека для создания пользовательских интерфейсов.
+2. TypeScript: Язык программирования, добавляющий статическую типизацию к JavaScript.
 
-In the project directory, you can run:
 
-### `npm start`
+## Установка и запуск
+1. Клонируйте репозиторий:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+```
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+git clone https://github.com/idibek-alimov/mannershop.git
+```
+2. Перейдите в каталог проекта:
 
-### `npm test`
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+cd manner-shop
+```
+3. Установите зависимости:
 
-### `npm run build`
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+npm install
+```
+4. Запустите приложение:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+npm start
+```
+После запуска приложение будет доступно в вашем веб-браузере по адресу http://localhost:3000.
